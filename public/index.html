@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>escape.io</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <canvas width="1200" height="550" id="lienzo" ></canvas>
+    <form autocomplete="off">
+        <div class="form-container">
+            <input type="text" id="nickname" placeholder="Nickname..." autofocus required />
+            <input id="boton" type="submit" value="Entrar" />
+        </div>
+    </form>
+    <audio controls autoplay loop>
+        <source id="song" src="assets/songs/HyperFunkyZone.mp3" >
+        Your browser does not support the audio element.
+    </audio>
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
